@@ -1,4 +1,5 @@
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { describe, it, expect } from "vitest";
 import { scan, generate } from "../../src/index.js";
 
@@ -11,7 +12,7 @@ describe("config generator", () => {
     const config = files.find((f) => f.path === "opencode.json");
     expect(config).toBeDefined();
     expect(config!.content).toContain("opencode.ai/config.json");
-    expect(config!.content).toContain("opencode/gpt-5.1-codex");
+    expect(config!.content).toContain("anthropic/claude-sonnet-4-5"); // react-app fixture classifies as heavy → sonnet
     expect(config!.content).toContain("claude-haiku");
     expect(config!.content).toContain('"build"');
     expect(config!.overwrite).toBe(false);

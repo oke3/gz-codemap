@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { scan, generate } from "../../src/index.js";
 
-const fixtures = new URL("../fixtures/react-app", import.meta.url).pathname;
+const fixtures = resolve(fileURLToPath(new URL(".", import.meta.url)), "../fixtures/react-app");
 
 describe("agents-config generator", () => {
   it("generates custom agents for React/TypeScript project", async () => {
@@ -12,7 +12,6 @@ describe("agents-config generator", () => {
     expect(reactAgent).toBeDefined();
     expect(reactAgent!.content).toContain("React specialist");
     expect(reactAgent!.content).toContain("subagent");
-    expect(reactAgent!.content).toContain("ground-zero-portfolio.pages.dev");
     expect(typeAgent).toBeDefined();
     expect(typeAgent!.content).toContain("TypeScript specialist");
   });

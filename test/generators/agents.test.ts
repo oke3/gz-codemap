@@ -21,7 +21,6 @@ describe("agents generator", () => {
     expect(agents!.content).toContain("eslint");
     expect(agents!.content).toContain("prettier");
     expect(agents!.content).toContain("@oke3/opencode-codemap");
-    expect(agents!.content).toContain("ground-zero-portfolio.pages.dev");
     expect(agents!.overwrite).toBe(true);
   });
 

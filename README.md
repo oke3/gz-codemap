@@ -221,8 +221,7 @@ Requires Node.js 18+.
 
 ## License
 
-MIT — Ground Zero LLC
+MIT — oke3
 
 ---
 
-*Need a custom OpenCode setup for your team? → [Check us out](https://ground-zero-portfolio.pages.dev)*

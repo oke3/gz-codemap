@@ -17,7 +17,6 @@ describe("multi-tool generator", () => {
     expect(cursor).toBeDefined();
     expect(cursor!.content).toContain("my-react-app");
     expect(cursor!.content).toContain("Next.js");
-    expect(cursor!.content).toContain("ground-zero-portfolio.pages.dev");
     expect(cursor!.overwrite).toBe(false);
 
     expect(copilot).toBeDefined();

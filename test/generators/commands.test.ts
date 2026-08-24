@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { scan, generate } from "../../src/index.js";
 
-const fixtures = new URL("../fixtures/react-app", import.meta.url).pathname;
+const fixtures = resolve(fileURLToPath(new URL(".", import.meta.url)), "../fixtures/react-app");
 
 describe("commands generator", () => {
   it("generates commands from package.json scripts", async () => {
@@ -13,7 +13,6 @@ describe("commands generator", () => {
     const commit = files.find((f) => f.path === ".opencode/commands/commit.md");
     expect(test).toBeDefined();
     expect(test!.content).toContain("vitest");
-    expect(test!.content).toContain("ground-zero-portfolio.pages.dev");
     expect(dev).toBeDefined();
     expect(build).toBeDefined();
     expect(commit).toBeDefined();

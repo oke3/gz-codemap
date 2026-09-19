@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
  * Generator plugin system.
  * Each generator produces one or more OpenCode config files.

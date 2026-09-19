@@ -1,12 +1,12 @@
-# Contributing to opencode-codemap
+# Contributing to gz-codemap
 
 Thanks for considering a contribution! codemap reads real projects and generates their OpenCode config — so correctness and restraint matter more than features.
 
 ## Development setup
 
 ```sh
-git clone https://github.com/oke3/opencode-codemap.git
-cd opencode-codemap
+git clone https://github.com/oke3/gz-codemap.git
+cd gz-codemap
 npm install
 
 npm test        # vitest run — full generator test suite

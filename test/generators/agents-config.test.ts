@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it, expect } from "vitest";

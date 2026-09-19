@@ -1,15 +1,17 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 #!/usr/bin/env node
 
 /**
- * CLI entry point for @oke3/opencode-codemap.
+ * CLI entry point for @ground-zero-llc/gz-codemap.
  *
  * Usage:
- *   opencode-codemap                    # scan + generate current dir
- *   opencode-codemap scan [path]        # scan only, save .scan.json
- *   opencode-codemap generate [path]    # generate from existing .scan.json
- *   opencode-codemap --dry-run          # simulate, no files written
- *   opencode-codemap --force            # overwrite all files
- *   opencode-codemap --quiet            # minimal output
+ *   gz-codemap                    # scan + generate current dir
+ *   gz-codemap scan [path]        # scan only, save .scan.json
+ *   gz-codemap generate [path]    # generate from existing .scan.json
+ *   gz-codemap --dry-run          # simulate, no files written
+ *   gz-codemap --force            # overwrite all files
+ *   gz-codemap --quiet            # minimal output
  */
 
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
@@ -166,7 +168,7 @@ const pkg = JSON.parse(
 const program = new Command();
 
 program
-  .name("opencode-codemap")
+  .name("gz-codemap")
   .description(pkg.description)
   .version(pkg.version);
 
@@ -230,7 +232,7 @@ sharedFlags(
   const root = resolve(path);
   const scanPath = join(root, ".scan.json");
   if (!existsSync(scanPath)) {
-    console.error(`${red("✗")} No .scan.json at ${root}. Run ${cyan("opencode-codemap scan")} first.`);
+    console.error(`${red("✗")} No .scan.json at ${root}. Run ${cyan("gz-codemap scan")} first.`);
     process.exit(1);
   }
 

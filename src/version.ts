@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
  * Shared version string for generated file headers.
  * Reads from package.json at runtime so version bumps propagate automatically.

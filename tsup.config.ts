@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 import { defineConfig } from "tsup";
 
 export default defineConfig({

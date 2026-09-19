@@ -1,10 +1,12 @@
-# @oke3/opencode-codemap
+# gz-codemap
+
+> Built by [Ground Zero LLC](https://github.com/oke3) — AI infrastructure for the agentic age.
 
 **Scan any codebase → auto-generate OpenCode project config.**  
 Solves the cold start problem — go from blank to productive in one command.
 
 ```bash
-npx @oke3/opencode-codemap
+npx @ground-zero-llc/gz-codemap
 ```
 
 ## Why
@@ -21,31 +23,31 @@ Writing all this by hand every time is tedious and error-prone. codemap reads yo
 
 ```bash
 # One-shot: scan + generate in your current directory
-npx @oke3/opencode-codemap
+npx @ground-zero-llc/gz-codemap
 
 # Scan a specific project
-npx @oke3/opencode-codemap ./path/to/project
+npx @ground-zero-llc/gz-codemap ./path/to/project
 
 # Preview without writing files
-npx @oke3/opencode-codemap --dry-run ./path
+npx @ground-zero-llc/gz-codemap --dry-run ./path
 
 # Overwrite existing config files
-npx @oke3/opencode-codemap --force ./path
+npx @ground-zero-llc/gz-codemap --force ./path
 
 # Minimal output (useful in CI)
-npx @oke3/opencode-codemap --quiet ./path
+npx @ground-zero-llc/gz-codemap --quiet ./path
 
 # Scan only — saves .scan.json for inspection
-npx @oke3/opencode-codemap scan ./path
+npx @ground-zero-llc/gz-codemap scan ./path
 
 # Generate from previously saved .scan.json
-npx @oke3/opencode-codemap generate ./path
+npx @ground-zero-llc/gz-codemap generate ./path
 
 # Generate to a different output directory
-npx @oke3/opencode-codemap generate ./path --output ./out
+npx @ground-zero-llc/gz-codemap generate ./path --output ./out
 
 # Update — re-scans and only overwrites files that changed (preserves manual edits)
-npx @oke3/opencode-codemap update ./path
+npx @ground-zero-llc/gz-codemap update ./path
 ```
 
 ## What it detects
@@ -160,7 +162,7 @@ Plugin-based. **Scanners** analyze the project, **generators** produce config fi
 ### Adding a scanner
 
 ```ts
-import type { ScannerPlugin } from "@oke3/opencode-codemap";
+import type { ScannerPlugin } from "@ground-zero-llc/gz-codemap";
 
 export const myScanner: ScannerPlugin = {
   name: "my-scanner",
@@ -174,7 +176,7 @@ export const myScanner: ScannerPlugin = {
 Then inject it:
 
 ```ts
-import { scan } from "@oke3/opencode-codemap";
+import { scan } from "@ground-zero-llc/gz-codemap";
 import { myScanner } from "./my-scanner.js";
 
 const model = await scan("/path/to/project", {
@@ -185,7 +187,7 @@ const model = await scan("/path/to/project", {
 ### Adding a generator
 
 ```ts
-import type { GeneratorPlugin } from "@oke3/opencode-codemap";
+import type { GeneratorPlugin } from "@ground-zero-llc/gz-codemap";
 
 export const myGenerator: GeneratorPlugin = {
   name: "my-generator",
@@ -208,8 +210,8 @@ const files = await generate(model, {
 ## Development
 
 ```bash
-git clone https://github.com/oke3/opencode-codemap
-cd opencode-codemap
+git clone https://github.com/oke3/gz-codemap
+cd gz-codemap
 npm install
 npm run dev        # watch mode
 npm test           # 38+ tests

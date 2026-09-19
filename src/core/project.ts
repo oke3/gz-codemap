@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
  * Project model — the aggregated result of all scanners.
  * Generators consume this to produce OpenCode config files.

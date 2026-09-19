@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
  * opencode.json generator — produces project-specific OpenCode runtime config.
  */

@@ -1,8 +1,10 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
- * @oke3/opencode-codemap — public API.
+ * @ground-zero-llc/gz-codemap — public API.
  *
  * Usage:
- *   import { scan, generate, buildProject } from "@oke3/opencode-codemap";
+ *   import { scan, generate, buildProject } from "@ground-zero-llc/gz-codemap";
  */
 
 import { basename, relative } from "node:path";

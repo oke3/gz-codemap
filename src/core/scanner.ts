@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
  * Scanner plugin system.
  * Each scanner analyzes one aspect of a project.

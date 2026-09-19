@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
  * File scanner — walks the project tree and detects structure.
  * Honors .gitignore via the `ignore` package.

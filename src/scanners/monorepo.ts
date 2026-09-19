@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
  * Monorepo scanner — detects workspace configs and resolves workspace directories.
  * Supports pnpm-workspace.yaml, package.json workspaces, and lerna.json.

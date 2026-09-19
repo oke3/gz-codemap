@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 import { describe, it, expect } from "vitest";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -20,7 +22,7 @@ describe("agents generator", () => {
     expect(agents!.content).toContain("vitest");
     expect(agents!.content).toContain("eslint");
     expect(agents!.content).toContain("prettier");
-    expect(agents!.content).toContain("@oke3/opencode-codemap");
+    expect(agents!.content).toContain("@ground-zero-llc/gz-codemap");
     expect(agents!.overwrite).toBe(true);
   });
 

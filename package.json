@@ -1,5 +1,5 @@
 {
-  "name": "@oke3/opencode-codemap",
+  "name": "@ground-zero-llc/gz-codemap",
   "version": "0.2.3",
   "description": "Scan any codebase, auto-generate OpenCode config. Solves the cold start problem.",
   "type": "module",
@@ -7,7 +7,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "opencode-codemap": "dist/cli.js"
+    "gz-codemap": "dist/cli.js"
   },
   "exports": {
     ".": {
@@ -40,7 +40,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oke3/opencode-codemap.git"
+    "url": "git+https://github.com/oke3/gz-codemap.git"
   },
   "publishConfig": {
     "access": "public"
@@ -55,5 +55,6 @@
     "typescript": "^5.5.0",
     "vitest": "^2.0.0"
   },
-  "author": "oke3"
+  "author": "Ground Zero LLC <hello@ground-zero.dev>",
+  "publisher": "Ground Zero LLC",
 }

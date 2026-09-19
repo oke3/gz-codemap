@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 /**
  * Language scanner — detects Python, Go, and Rust projects and their tooling.
  */

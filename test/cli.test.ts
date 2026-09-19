@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Ground Zero LLC. All rights reserved.
+
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { resolve } from "node:path";
 import { existsSync, readFileSync, mkdtempSync, writeFileSync, rmSync, mkdirSync } from "node:fs";

@@ -284,6 +284,9 @@ codemap is the only tool that generates config for **three AI coding tools at on
 
 - [gz-modelrouter](https://github.com/oke3/gz-modelrouter) — Intelligent LLM cost router
 - [gz-gateway](https://github.com/oke3/gz-gateway) — OpenAI-compatible AI gateway — rate limiting, caching, failover, cost tracking
+- [gz-agent](https://github.com/oke3/gz-agent) — Production-grade agent runtime — tool calling, state machines, multi-agent coordination
+- [gz-eval](https://github.com/oke3/gz-eval) — Evaluation framework — golden test sets, quality scoring, A/B comparison
+- [gz-guardrails](https://github.com/oke3/gz-guardrails) — AI safety middleware — PII detection, prompt injection defense, content moderation
 - [gz-context-engine](https://github.com/oke3/gz-context-engine) — Production-grade RAG context engine
 - [gz-sessions](https://github.com/oke3/gz-sessions) — Persistent cross-session memory for agents
 - [gz-bench](https://github.com/oke3/gz-bench) — Benchmarking suite for AI coding tools
